@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    margin-right: 3vw;
+}
+/* .navbar img{
+  width: 5vw;
+  height: 5vw;
+} */
+.somaiya{
+    width: 5vw;
+    height: 5vw;
+    margin-left:2vw;
+}
+.eta{
+    width: 5vw;
+    height: 5vw;
+    margin: 0 0 2vw -25vw;
+}
+.link-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap:1vw ;
+    text-decoration: none;
+    color:black ;
+    font-size: 1vw;
+}
+
