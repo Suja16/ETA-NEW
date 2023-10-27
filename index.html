@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>ETA</title>
         <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="front">
@@ -16,7 +16,15 @@
             <a  href="./index.html"><img src="./images/somaiya-logo.png" alt="somkaiya-logo" class="somaiya"></a>
             <a  href="./index.html"><img src="./images/eta-logo.png" alt="ETA-logo" class="eta"></a>
             </div>
-            <div class="link-nav">
+            
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" id="menu">Menu</button>
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">TEAM ETA</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">×</button>
+              </div>
+              <div class="offcanvas-body">
+
                     <a href="index.html" class="link-nav">Home</a>
                     <a href="shell.html" class="link-nav">SHELL ECO-MARATHON</a>
                     <a href="blog.html" class="link-nav">Blog</a>
@@ -24,6 +32,8 @@
                     <a href="about.html" class="link-nav">Team</a>
                     <a href="alumni.html" class="link-nav" >ALUMNI</a>
                     <a href="contact.html" class="link-nav" id="con">Contact</a>
+                          
+            </div>
             </div>
         </nav>
         <div class="parallax">
@@ -32,6 +42,32 @@
                 <p>We are #madeovermiles</p>
             </div>
         </div>
+        <div class="about">
+            <p>
+                Team Eta is a student team that participates annually in the Shell Eco-Marathon. Shell Eco-marathon is one of the world’s leading energy efficiency competition programmes. Students are challenged to design, build and test energy-efficient cars, pushing the boundaries of what is technically possible. 
+            </p>
+            <div class="shell_eco">
+            <img src="./images/Car/shell_car.png" alt="shell-img" class="eco_img">
+            <div class="shell-text">
+            <p class="shell">
+                To build a fuel efficient vehicle to combat current problem and create a sustainable future for coming generations.
+                We are Eta, a compassionate group of young engineers who believe in bringing a change to the traditional conventions followed in today's automobile industry leading to a carbon neutral Earth.
+                -our Vision
+            </p>
+            </div>    
+        </div>
+            <img src="./images/Car/eta_car_1.png" alt="eta-car">
+            <h1>ABOUT US</h1>
+            <div calss="history">
+                <p>
+                    It all started in 2013, when a group of students from K.J. Somaiya College of Engineering felt the need to use their technical knowledge and management skills to develop and innovate technology for the benefit of mankind. That is when, they all came together as Team ETA with a goal of providing a sustainable future to the world using technological innovations to achieve mileage in numbers that appeared to be just a dream for the current world.
+                </p>
+                <p>
+                    Since then, the team worked tirelessly with the utmost commitment, dedication and countless of sleepless nights, to develop and be the proud makers of Jugaad, J-14, Arya, Triton, Mahil and Yugant prototypes.
+                </p>
+            </div>
+         </div> 
     </div>
+
     </body>
 </html>
