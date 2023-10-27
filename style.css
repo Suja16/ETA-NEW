@@ -134,8 +134,7 @@ body {
 }
 .eco_img{
     z-index: 5;
-    border-radius: 20px;
-    width: 50vw;
+    width: 70vw;
 }
 .shell_eco{
     display: flex;
@@ -146,33 +145,50 @@ body {
     width: 90vw;
     height: 100%;
     margin-left: 5vw;
+    flex-shrink: 1;
+    flex-basis: auto;
+    min-width: 0;
    
 }
 .shell_eco p{
-    /* color: #FFF; */
+    color: #0174AB; 
+    background-color: rgba(0, 0, 0, 0.5);
     border: 0.1rem solid #0174AB;
     font-size: 1.5vw;
     font-family: Inria Sans;
     font-weight: 700;
-    letter-spacing: 0.2em; 
+    letter-spacing: 0.1`rem; 
     text-align: center;
     margin: 0px;
-    width: 10vw;
-    /* z-index: 9; */
+    width:30vw ;
+    padding: 2vw;
 }
-.shell{
-    z-index: 32;
-    margin-left: 30vw ;
-    box-sizing: 50px;
+.shell_eco img{
+    margin-left: 10vw;
+    
 }
-
 .shell-text {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     width: 150px;
     height: 150px;
     position: relative;
     z-index: 5;
-    
+    margin-left: 0vw;
+    margin-top: -15vw;
+}
+.E_car{
+    margin: 0vw 0 0 2vw;
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+}
+.E_car img{
+    margin-top: 10vw;
+}
+.history h1{
+    text-align: center;
+}
+.history p{
+    margin: 1vw;
+    text-align: center;
+    line-height: 3vw;
 }
