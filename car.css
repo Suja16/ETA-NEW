@@ -1,145 +1,157 @@
-body {
-    background-color: black !important;
-}
-.navbar{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #0174AB;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-}
-.somaiya{
-    width: auto;
-    height: 50px;
-    margin-left:2vw;
-}
-.eta{
-    width:auto;
-    height: 50px;
-    margin: 0 0 2vw 1vw;
-}
-#offcanvasWithBothOptions{
-    background-color: black;
-    margin-right: 1vw;
+    body {
+        background-color: black !important;
+    }
+    .navbar{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #0174AB;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+    }
+    .somaiya{
+        width: auto;
+        height: 50px;
+        margin-left:2vw;
+    }
+    .eta{
+        width:auto;
+        height: 50px;
+        margin: 0 0 2vw 1vw;
+    }
+    #offcanvasWithBothOptions{
+        background-color: black;
+        margin-right: 1vw;
 
-}
-#offcanvasWithBothOptions .offcanvas-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    color: white;
-    border-bottom: 1px solid white;
-}
-.offcanvas-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap:1vw ;
-    text-decoration: none;
-    margin: 50px 0 50px;
-}
-.offcanvas-body a{
-    color: white;
-    text-decoration: none;
-    font-size: 10px;
-    font-family: 'Inria Sans', sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.2em; 
-    word-wrap: break-word;
-    text-align: center;
+    }
+    #offcanvasWithBothOptions .offcanvas-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    .offcanvas-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap:1vw ;
+        text-decoration: none;
+        margin: 50px 0 50px;
+    }
+    .offcanvas-body a{
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+        font-family: 'Inria Sans', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.2em; 
+        word-wrap: break-word;
+        text-align: center;
 
-}
-#menu{
-    margin-right: 1vw;
-    
-}
-.parallax {
-    background-image: url('./images/Car/prototype.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    position: relative;
-    color: #fff;
-    width: 100%;
-}
-.parallax-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    }
+    #menu{
+        margin-right: 1vw;
+        
+    }
+    .parallax {
+        background-image: url('./images/Car/prototype.png');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        position: relative;
+        color: #fff;
+        width: 100%;
+    }
+    .parallax-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.parallax-text h1 {
-    margin-top: 5vw;
-    color: white;
-    font-size: 10vw; 
-    font-family: Inria Sans;
-    font-weight: 700;
-    letter-spacing: 0.2em; 
-    word-wrap: break-word;
-    text-align: center;
-    background: linear-gradient(180deg, #FFF 0%, rgba(12, 12, 12, 0.00) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    .parallax-text h1 {
+        margin-top: 5vw;
+        color: white;
+        font-size: 10vw; 
+        font-family: Inria Sans;
+        font-weight: 700;
+        letter-spacing: 0.2em; 
+        word-wrap: break-word;
+        text-align: center;
+        background: linear-gradient(180deg, #FFF 0%, rgba(12, 12, 12, 0.00) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-.parallax-text p {
-    color: white;
-    font-size: 4vw;
-    font-family: Inria Sans;
-    font-weight: 700;
-    letter-spacing: 0.2em; 
-    word-wrap: break-word;
-    text-align: center;
-}
-.cars{
-    display: flex;
-    flex-direction: column;
-}
-.cars h1{
-    font-size: 3vw;
-    font-family: Inria Sans;
-    font-weight: 700;
-    letter-spacing: 0.2em; 
-    word-wrap: break-word;
-    text-align: center;
-    margin: 2vw 0 2vw 0;
-    color: white;
-}
-.title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2vw 0 2vw 0;
-    color: #0174AB;
-    font-size: 2vw;
-}
-/* Apply these styles to all the classes except 'title' */
-.yuganta, .mahil, .triton, .Aarya, .J, .jugad {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .parallax-text p {
+        color: white;
+        font-size: 4vw;
+        font-family: Inria Sans;
+        font-weight: 700;
+        letter-spacing: 0.2em; 
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .cars{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    img{
+        width: 50vw;
+    }
+    .cars h1{
+        font-size: 3vw;
+        font-family: Inria Sans;
+        font-weight: 700;
+        letter-spacing: 0.2em; 
+        word-wrap: break-word;
+        text-align: center;
+        margin: 2vw 0 2vw 0;
+        color: white;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2vw 0 2vw 0;
+        color: #0174AB;
+        font-size: 2vw;
+    }
+    /* Apply these styles to all the classes except 'title' */
+    .yuganta, .mahil, .triton, .Aarya, .J, .jugad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.yuganta p, .mahil p, .triton p, .Aarya p, .J p, .jugad p {
-    font-size: 1vw;
-    width: 50%;
-    font-family: Inria Sans;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    word-wrap: break-word;
-    text-align: center;
-    color: white;
-    margin: 0;
-}
+    .yuganta p, .mahil p, .triton p, .Aarya p, .J p, .jugad p {
+        font-size: 1vw;
+        width: 50%;
+        font-family: Inria Sans;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        word-wrap: break-word;
+        text-align: center;
+        color: white;
+        margin: 0;
+    }
+    @media (max-width: 768px) {
+        .yuganta, .triton, .J{
+            flex-wrap: wrap;
+        }
+        .mahil, .Aarya, .jugad{
+            flex-wrap: wrap-reverse;
+        }
+    }
 
 

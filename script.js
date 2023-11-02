@@ -1,29 +1,16 @@
-const sections = document.querySelectorAll(".team-member");
-const options = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0.5, // Trigger when 50% of the element is visible
-};
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".navbar");
+  const content = document.querySelector(".content");
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const h1 = entry.target.querySelector("h1");
-      const num = parseInt(h1.getAttribute("data-num"), 10);
-      let currentNum = parseInt(h1.textContent, 10);
-      
-      const counterInterval = setInterval(() => {
-        if (currentNum < num) {
-          currentNum++;
-          h1.textContent = currentNum;
-        } else {
-          clearInterval(counterInterval);
-        }
-      }, 100); // Adjust the interval duration as needed
-    }
-  });
-}, options);
+  if (navbar && content) {
+    window.addEventListener("scroll", () => {
+      const scrollPercentage = (window.scrollY / (content.offsetHeight - window.innerHeight)) * 100;
 
-sections.forEach(section => {
-  observer.observe(section);
+      if (scrollPercentage >= 30) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  }
 });
