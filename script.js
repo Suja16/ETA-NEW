@@ -1,15 +1,29 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const container = document.querySelector('.container');
+const sections = document.querySelectorAll(".team-member");
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5, // Trigger when 50% of the element is visible
+};
 
-  container.addEventListener('scroll', () => {
-    const scrollPosition = container.scrollTop;
-
-    if (scrollPosition >= 0 && scrollPosition < 33.33) {
-      container.style.setProperty('--num', 6);
-    } else if (scrollPosition >= 33.33 && scrollPosition < 66.66) {
-      container.style.setProperty('--num', 1);
-    } else {
-      container.style.setProperty('--num', 23);
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const h1 = entry.target.querySelector("h1");
+      const num = parseInt(h1.getAttribute("data-num"), 10);
+      let currentNum = parseInt(h1.textContent, 10);
+      
+      const counterInterval = setInterval(() => {
+        if (currentNum < num) {
+          currentNum++;
+          h1.textContent = currentNum;
+        } else {
+          clearInterval(counterInterval);
+        }
+      }, 100); // Adjust the interval duration as needed
     }
   });
+}, options);
+
+sections.forEach(section => {
+  observer.observe(section);
 });

@@ -117,7 +117,24 @@ body {
         font-size: 10vw;
         margin-top: 90px;
     }
-    
+    .E_car img{
+        margin-top: 10vw;
+        width: 85vw;
+    }
+    .history p{
+        width: 80vw !important;
+    }
+    .shell-text{
+        margin:0 0 0 3vw !important;
+    }
+    .eco_img{
+        width: 50vw !important;
+        margin: 0 0 0 -5vw !important;
+    }
+    .team-section{
+        width: 90vw;
+        margin: 0 0 0 5vw;
+    }
   
 }
 .about{
@@ -146,8 +163,7 @@ body {
     height: 100%;
     margin-left: 5vw;
     flex-shrink: 1;
-    flex-basis: auto;
-    min-width: 0;
+
    
 }
 .shell_eco p{
@@ -176,14 +192,17 @@ body {
     margin-top: -15vw;
 }
 .E_car{
-    margin: 0vw 0 0 2vw;
+    margin: 2vw 0 0 2vw;
     display: flex;
     align-items: center;
-    flex-shrink: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 .E_car img{
     margin-top: 10vw;
 }
+
 .history h1{
     text-align: center;
 }
@@ -191,11 +210,13 @@ body {
     margin: 1vw;
     text-align: center;
     line-height: 3vw;
+    width: 60vw;
 }
 .team-section {
     display: flex;
     justify-content: space-between;
     margin-top: 3vw;
+   
 
   }
   
@@ -206,21 +227,17 @@ body {
   }
   
   .team-member h3 {
-    font-size: 18px;
+    font-size: 1vw;
   }
   
   .team-member p {
-    font-size: 24px;
+    font-size: 3vw;
   }
   @property --num {
     syntax: '<integer>';
     initial-value: 0;
     inherits: false;
   }
-  .team-section {
-    overflow-y: scroll;
-  }
-  
   
   .six,.one,.twothree {
     transition: --num 1s;
@@ -235,12 +252,6 @@ body {
   .twothree:hover {
     --num: 23;
   }
-  .twothree::after {
-    content: counter(num);
-  }
-  .six::after {
-    content: counter(num);
-  }
-  .one::after {
+  .six::after, .one::after, .twothree::after {
     content: counter(num);
   }
