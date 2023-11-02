@@ -212,3 +212,35 @@ body {
   .team-member p {
     font-size: 24px;
   }
+  @property --num {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+  }
+  .team-section {
+    overflow-y: scroll;
+  }
+  
+  
+  .six,.one,.twothree {
+    transition: --num 1s;
+    counter-reset: num var(--num);
+  }
+  .six:hover {
+    --num: 6;
+  }
+  .one:hover {
+    --num: 1;
+  }
+  .twothree:hover {
+    --num: 23;
+  }
+  .twothree::after {
+    content: counter(num);
+  }
+  .six::after {
+    content: counter(num);
+  }
+  .one::after {
+    content: counter(num);
+  }

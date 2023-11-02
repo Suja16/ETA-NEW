@@ -1,9 +1,15 @@
-const navbar = document.getElementById('navbar');
+document.addEventListener('DOMContentLoaded', function() {
+  const container = document.querySelector('.container');
 
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 200) {
-        navbar.classList.add('no-bg-image');
-      } else {
-        navbar.classList.remove('no-bg-image');
-      }
-    });
+  container.addEventListener('scroll', () => {
+    const scrollPosition = container.scrollTop;
+
+    if (scrollPosition >= 0 && scrollPosition < 33.33) {
+      container.style.setProperty('--num', 6);
+    } else if (scrollPosition >= 33.33 && scrollPosition < 66.66) {
+      container.style.setProperty('--num', 1);
+    } else {
+      container.style.setProperty('--num', 23);
+    }
+  });
+});
