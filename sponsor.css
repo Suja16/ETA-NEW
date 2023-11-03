@@ -1,0 +1,36 @@
+body{
+    background: linear-gradient(180deg, #0D0D0D 0%, rgba(210, 221, 226, 0.00) 36.98%, #000 100%);
+}
+.key{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    gap: 2.5vw;
+}
+.key h2{
+    margin-top: 2vw;
+}
+.key img{
+    border-radius: 70px;
+    width: 27.3125rem;
+    height: 6.6875rem;
+}
+.title, .gold, .silver , .bronze{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+.title img{
+    width: 60vw;
+}
+@media (max-width: 768px) {
+    .key img{
+       width: 80vw;
+       margin-bottom: 2vw;
+    }
+
+}
